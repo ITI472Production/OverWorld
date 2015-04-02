@@ -46,11 +46,59 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\Door.cs" />
+     <Compile Include="Assets\_Scripts\Enemy.cs" />
+     <Compile Include="Assets\_Scripts\Enemy_1.cs" />
+     <Compile Include="Assets\_Scripts\Enemy_2.cs" />
+     <Compile Include="Assets\_Scripts\Enemy_3.cs" />
+     <Compile Include="Assets\_Scripts\Enemy_4.cs" />
      <Compile Include="Assets\_Scripts\FollowCam.cs" />
+     <Compile Include="Assets\_Scripts\Hero.cs" />
+     <Compile Include="Assets\_Scripts\Main.cs" />
+     <Compile Include="Assets\_Scripts\Parallax.cs" />
      <Compile Include="Assets\_Scripts\Player.cs" />
+     <Compile Include="Assets\_Scripts\PowerUp.cs" />
+     <Compile Include="Assets\_Scripts\Projectile.cs" />
+     <Compile Include="Assets\_Scripts\Shield.cs" />
+     <Compile Include="Assets\_Scripts\Utils.cs" />
+     <Compile Include="Assets\_Scripts\Wall.cs" />
+     <Compile Include="Assets\_Scripts\Wall_down.cs" />
+     <Compile Include="Assets\_Scripts\Wall_north.cs" />
+     <Compile Include="Assets\_Scripts\Wall_west.cs" />
+     <Compile Include="Assets\_Scripts\Weapon.cs" />
+     <None Include="Assets\ProCore\Prototype\About\changelog.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColor.shader" />
+     <None Include="Assets\ProCore\Shared\About\README.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorTransparency.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\pb_FaceHighlight.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\UnlitSolidColor.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseTextureBlend.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\pb_UnlitVertexColor.shader" />
+     <None Include="Assets\ProCore\Prototype\About\pc_AboutEntry_ProBuilder.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\pb_VertexShader.shader" />
+     <None Include="Assets\_Materials\UnlitAlpha.shader" />
+     <None Include="Assets\ProCore\_README_PROTOTPYE.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorEmission.shader" />
+     <None Include="Assets\ProCore\Prototype\About\Credits.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/Farris/Desktop/OverWorld/Overworld/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="ProBuilderCore-Unity4">
+ <HintPath>C:/Users/Farris/Desktop/OverWorld/Overworld/Assets/ProCore/Prototype/Classes/ProBuilderCore-Unity4.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderMeshOps-Unity4">
+ <HintPath>C:/Users/Farris/Desktop/OverWorld/Overworld/Assets/ProCore/Prototype/Classes/ProBuilderMeshOps-Unity4.dll</HintPath>
+ </Reference>
+ <Reference Include="ProCore">
+ <HintPath>C:/Users/Farris/Desktop/OverWorld/Overworld/Assets/ProCore/Shared/Code/ProCore.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{3FF09B72-8E8C-040D-BC2B-7D8A957FF7B4}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
