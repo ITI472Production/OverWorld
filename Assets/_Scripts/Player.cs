@@ -16,25 +16,25 @@ public class Player : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.RightArrow)){
+		if(Input.GetKey(KeyCode.RightArrow)){
 			if(moveright){
 				transform.position += Vector3.right * speed * Time.deltaTime;
 				return;
 			}
 		}
-		if (Input.GetKey(KeyCode.LeftArrow)){
+		else if(Input.GetKey(KeyCode.LeftArrow)){
 			if(moveleft){
 				transform.position += Vector3.left * speed * Time.deltaTime;
 				return;
 			}
 		}
-		if(Input.GetKey(KeyCode.DownArrow) && movedown){
+		else if(Input.GetKey(KeyCode.DownArrow) && movedown){
 			if(movedown){
 				transform.position += Vector3.back * speed *Time.deltaTime;
 				return;
 			}
 		}
-		if(Input.GetKey(KeyCode.UpArrow) && moveup){
+		else if(Input.GetKey(KeyCode.UpArrow) && moveup){
 			if(moveup){
 				transform.position += Vector3.forward * speed *Time.deltaTime;
 				return;

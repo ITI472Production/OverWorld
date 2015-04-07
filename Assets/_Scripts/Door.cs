@@ -20,8 +20,10 @@ public class Door : MonoBehaviour {
 	public void OnCollisionExit(){
 		Space_Check = false;
 		Player_Lock = true;
-		Player.S.moveright = true;
-		Destroy(SkyObject);
+		if (Input.GetKey (KeyCode.LeftArrow)) {
+			Player.S.moveright = true;
+		}
+		Destroy (SkyObject);
 	}
 
 	void Update(){
