@@ -23,7 +23,7 @@ public class Door_North : MonoBehaviour {
 	
 	void Update(){
 		if(Input.GetKey(KeyCode.Space) && Space_Check == true){
-			Application.LoadLevel("timeline-setup");
+			Application.LoadLevel("Timeline-GameLoad");
 		}
 		if(Input.GetKey (KeyCode.Backspace)){
 			Destroy(SkyObject);

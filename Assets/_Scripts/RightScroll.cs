@@ -6,9 +6,11 @@ public class RightScroll : MonoBehaviour {
 	CardController cc;
 	
 	GameObject controlCube;
+	AudioSource audioclick;
 
 	void OnMouseUp() {
 		cc.ScrollTimeline(1);
+		audio.PlayOneShot(audioclick.clip, 1F);
 
 	}
 
@@ -16,6 +18,7 @@ public class RightScroll : MonoBehaviour {
 	void Start () {
 		controlCube = GameObject.Find("Card Controller");
 		cc = controlCube.GetComponent<CardController>();
+		audioclick = GetComponentInParent<AudioSource>();
 
 	}
 	
