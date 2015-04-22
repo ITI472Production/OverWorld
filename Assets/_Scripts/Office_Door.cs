@@ -19,7 +19,6 @@ public class Office_Door : MonoBehaviour {
 	
 	public void OnCollisionExit(){
 		Space_Check = false;
-		Player_Lock = true;
 		if (Input.GetKey (KeyCode.LeftArrow)) {
 			Player.S.moveright = true;
 		}
@@ -29,8 +28,7 @@ public class Office_Door : MonoBehaviour {
 	void Update(){
 		if(Input.GetKey (KeyCode.Backspace)){
 			Destroy(CreditsObject);
-			Player_Lock = false;
-			UnLockMovement();
+			RightUnLockMovement();
 		}
 	}
 	
@@ -41,7 +39,7 @@ public class Office_Door : MonoBehaviour {
 		Player.S.moveright = false;
 	}
 	
-	public void UnLockMovement(){
+	public void RightUnLockMovement(){
 		Player.S.moveup = true;
 		Player.S.movedown = true;
 		Player.S.moveleft = true;

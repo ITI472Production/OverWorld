@@ -62,7 +62,7 @@ public class Main : MonoBehaviour {
 
 	void Update(){
 		if(Input.GetKey(KeyCode.Escape)){
-			Application.LoadLevel("coloredwalls");
+			Application.LoadLevel("overworld_01");
 		}
 	}
 

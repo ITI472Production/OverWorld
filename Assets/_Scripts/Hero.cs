@@ -79,6 +79,11 @@ public class Hero : MonoBehaviour {
 		if (Input.GetAxis ("Jump") == 1 && fireDelegate != null) {
 			fireDelegate();
 		}
+
+		if(Input.GetKey(KeyCode.Escape)){
+			Application.LoadLevel("_overworld_01");
+		}
+
 	}
 
 	// This variable holds a reference to the last triggering GameObject
