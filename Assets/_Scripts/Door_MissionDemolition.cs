@@ -28,7 +28,7 @@ public class Door_MissionDemolition : MonoBehaviour {
 
 	void Update(){
 		if(Input.GetKey(KeyCode.Space) && Space_Check == true){
-			Application.LoadLevel("_Scene_0");
+			Application.LoadLevel("Mission_Demolition");
 		}
 		if(Input.GetKey (KeyCode.Backspace)){
 			Destroy(SkyObject);
