@@ -17,10 +17,6 @@ public class Door : MonoBehaviour {
 		}
 	}
 
-	public void OnCollisionStay(){
-
-	}
-
 	public void OnCollisionExit(){
 		Space_Check = false;
 		Player_Lock = true;
@@ -32,7 +28,7 @@ public class Door : MonoBehaviour {
 
 	void Update(){
 		if(Input.GetKey(KeyCode.Space) && Space_Check == true){
-			Application.LoadLevel("_Scene_0");
+			Application.LoadLevel("intro");
 		}
 		if(Input.GetKey (KeyCode.Backspace)){
 			Destroy(SkyObject);
